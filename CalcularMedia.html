@@ -2,15 +2,17 @@
 	<head>
 		<title>Calcular a Media</title>
 		<link rel="stylesheet" type="text/css" href="CalcularMedia.css">
+		<script type="text/javascript" src="CalcularMedia.js"></script>
 	</head>
 	<body>
 		<div>
 			<form action="CalcularMedia.php" method="GET">
 				<label for="n1">N1: </label>
-				<input type="text" name="n1"/><br/>
+				<input id="n1" type="text" name="n1"/><br/>
 				<label for="n2">N2: </label>
-				<input type="text" name="n2"/><br/>
-				<input type="submit" value="Calcular"/><br/>
+				<input id="n2" type="text" name="n2"/><br/>
+				<input type="button" onclick="javascript:calculo();" name="name" value="Calcular">
+  				<input type="text" id="txtResultado" value="">
 			</form>
 		</div>
 	</body>
